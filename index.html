@@ -3,95 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Did You Catch It Landing Page</title>
+  <title>Did You Catch It - Landing Page</title>
   <style>
-    /* Add your custom CSS styles here */
     body {
       font-family: Arial, sans-serif;
-      background-color: #89cff0; /* Super Saiyan Blue color */
+      line-height: 1.6;
       color: #333;
-      margin: 0;
-      padding: 0;
     }
 
-    h1, h2 {
-      color: #ff7043; /* Orange color */
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: bold;
+      margin-bottom: 15px;
     }
 
     a {
-      color: #ff7043;
+      color: #333;
       text-decoration: none;
     }
 
     a:hover {
+      color: #1e88e5;
       text-decoration: underline;
     }
 
-    .cta-button {
-      display: inline-block;
-      background-color: #ff7043;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
+    /* Layout */
+    #container {
+      display: flex;
+      flex-direction: column;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    header .logo {
+      font-size: 28px;
       font-weight: bold;
+      color: #1e88e5;
     }
 
-    .cta-button:hover {
-      background-color: #ff5722;
+    header nav ul {
+      display: flex;
+      list-style-type: none;
+      padding-left: 0;
     }
 
-    /* Wave vibes */
+    header nav ul li {
+      margin-right: 20px;
+    }
+
+    /* Hero */
     #hero {
-      background-image: url('https://www.transparenttextures.com/patterns/wavegrid.png');
-      background-color: rgba(0, 0, 0, 0.1);
-      padding: 50px 20px;
+      background-color: #1e88e5;
+      color: #fff;
       text-align: center;
+      padding: 50px 0;
+    }
+
+    #hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    #hero p {
+      font-size: 24px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Features */
+    #features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    #features .feature {
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    #features .feature h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    #features .feature p {
+      font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1e88e5;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
-  <!-- Hero Section -->
-  <section id="hero">
-    <h1>Did You Catch It: Discover and Buy Exclusive Adidas Hype Clothing</h1>
-    <p>Trade limited edition, celebrity-endorsed, and designer collaboration Adidas products in a secure, trusted marketplace.</p>
-    <!-- Add background image or video here -->
-    <a href="#" class="cta-button">Download Now</a>
-  </section>
+  <div id="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">Did You Catch It</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Features Section -->
-  <section id="features">
-    <h2>Features</h2>
-    <!-- Add feature icons, descriptions, and screenshots or videos here -->
-  </section>
-
-  <!-- Testimonials and User Reviews Section -->
-  <section id="testimonials">
-    <h2>Testimonials and User Reviews</h2>
-    <!-- Add user reviews, profile pictures, names, and press coverage here -->
-  </section>
-
-  <!-- How it Works Section -->
-  <section id="how-it-works">
-    <h2>How it Works</h2>
-    <!-- Add step-by-step guide with images, icons, or illustrations here -->
-  </section>
-
-  <!-- Exclusive Drops and Collaborations Section -->
-  <section id="exclusive-drops">
-    <h2>Exclusive Drops and Collaborations</h2>
-    <!-- Add images and descriptions of recent or upcoming drops and collaborations here -->
-  </section>
-
-  <!-- Call-to-Action (CTA) Section -->
-  <section id="cta">
-    <a href="#" class="cta-button">Download Now</a>
-  </section>
-
-  <!-- Footer Section -->
-  <footer>
-    <!-- Add links to privacy policy, terms of service, legal information, and social media icons here -->
-  </footer>
-</body>
-</html>
-
+    <!-- Hero -->
+    <section id="hero">
+      <h1>Did You Catch It: Discover and Buy Exclusive Adidas Hype Clothing</h1>
+      <p>
